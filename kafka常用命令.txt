@@ -1,0 +1,4 @@
+bin/kafka-topics.sh --list --zookeeper sspkafka01:2181,sspkafka02:2181,sspkafka03:2181
+bin/kafka-topics.sh --describe --zookeeper sspkafka01:2181,sspkafka02:2181,sspkafka03:2181 --topic topic_test
+bin/kafka-topics.sh --zookeeper sspkafka01:2181,sspkafka02:2181,sspkafka03:2181 --create --topic test_tvl_request --partitions 2  --replication-factor 1
+bin/kafka-console-consumer.sh --bootstrap-server 172.16.25.27:9092,172.16.25.28:9092,172.16.25.29:9092 --from-beginning --topic test_tvl_request

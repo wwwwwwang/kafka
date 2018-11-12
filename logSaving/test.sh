@@ -1,0 +1,1 @@
+sh run.sh local 0 -k whsh -b 172.31.18.12:9092,172.31.18.13:9092,172.31.18.14:9092 -t log_save_with_kafka
